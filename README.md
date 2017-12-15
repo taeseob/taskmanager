@@ -18,6 +18,7 @@
 git -c "http.proxy=168.219.61.252:8080" clone https://github.com/taeseob/todomanager.git D:/WORK/MY_OWN_PROJECT/todomanager
 git checkout -b dev
 
+git status
 git add README.md
 git commit -m "README.md 파일 작성"
 git -c "http.proxy=168.219.61.252:8080" push origin dev
