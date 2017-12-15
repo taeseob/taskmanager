@@ -29,3 +29,7 @@ $ ssh-keygen -t rsa -b 4096 -C "tsshin1985@gmail.com"
 $ eval $(ssh-agent -s)
 $ ssh-add ~/.ssh/id_rsa
 ```
+
+## 설계
+design 디렉토리 아래 *.uml 파일들은 [PlantUML](http://plantuml.com) 사용
+
