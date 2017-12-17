@@ -1,6 +1,6 @@
-# To-do Manager
+# Task Manager
 
-개발 연습용 To-do Manager 프로그램
+개발 연습용 Task Manager 프로그램
 
 ## 연습할것들
 
@@ -15,7 +15,7 @@
 
 ## 사용 해 본 Git 명령어들
 ```
-git -c "http.proxy=168.219.61.252:8080" clone https://github.com/taeseob/todomanager.git D:/WORK/MY_OWN_PROJECT/todomanager
+git -c "http.proxy=168.219.61.252:8080" clone https://github.com/taeseob/taskmanager.git D:/WORK/MY_OWN_PROJECT/taskmanager
 git checkout -b dev
 
 git status

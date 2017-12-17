@@ -1,0 +1,10 @@
+@startuml
+' private 변수에 대한 단순한 getter, setter 메소드는 넣지 않음
+class Task {
+	- String title
+	- String description
+	- Date dueDate
+	- int priority
+	- ImportanceType importance
+}
+@enduml
