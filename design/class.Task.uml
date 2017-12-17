@@ -1,10 +1,15 @@
 @startuml
 ' private 변수에 대한 단순한 getter, setter 메소드는 넣지 않음
 class Task {
+	- UUID taskId
+	- UUID taskGroupId
+	- Set<UUID> subTaskIds
 	- String title
 	- String description
 	- Date dueDate
-	- int priority
+	- Integer priority
 	- ImportanceType importance
+	- Set<UUID> priorGroupIds
+	- Set<UUID> subsequentGroupIds
 }
 @enduml
