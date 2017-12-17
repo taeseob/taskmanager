@@ -1,9 +1,13 @@
 # Task Manager
-
 개발 연습용 Task Manager 프로그램
 
-## 연습할것들
+## 내가 만들려는 기능이 무엇인가? = 무엇을 테스트 할까?
+- Task ID 생성
+- Task ~~제목, 내용,~~ 기한, 우선순위, 중요도 세팅
+- Task Group 만들기
+- Task간의 선후관계 만들기
 
+## 연습할것들
 * TDD - 테스트 코드 작성 습관 들이기
 * Git - 명령어 사용하는 연습
 * Maven - 툴 사용법
@@ -20,6 +24,7 @@ git checkout -b dev
 
 git status
 git add README.md
+git add .
 git commit -m "README.md 파일 작성"
 git -c "http.proxy=168.219.61.252:8080" push origin dev
 ```
@@ -33,4 +38,3 @@ $ ssh-add ~/.ssh/id_rsa
 
 ## 설계
 design 디렉토리 아래 *.uml 파일들은 [PlantUML](http://plantuml.com) 사용
-
