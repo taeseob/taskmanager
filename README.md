@@ -27,6 +27,30 @@ git add README.md
 git add .
 git commit -m "README.md 파일 작성"
 git -c "http.proxy=168.219.61.252:8080" push origin dev
+
+git remote -v
+git remote set-url origin https://github.com/taeseob/taskmanager.git
+
+git config user.name "taeseob"
+git config user.email "tsshin1985@gmail.com"
+
+git diff
+git log
+git log -p -2
+git log --stat
+git log --pretty=oneline
+git log --pretty=format:"%h %s" --graph
+
+git reset HEAD README.md (Stage에서 파일 제외하기)
+git checkout -- README.md (수정하기 전 Checkout 했던 내용으로 되돌리기)
+
+git fetch origin (가져오기 - 로컬로 가져오지만 머지하지 않음)
+git pull (가져오기 - 로컬로 가져오고 머지)
+
+git -c "http.proxy=168.219.61.252:8080" remote show origin
+
+git config branch.dev.remote origin
+git config branch.dev.merge refs/heads/dev
 ```
 
 ## SSH KEY 생성
