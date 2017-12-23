@@ -18,12 +18,16 @@ public class Task {
 	// taskGroup, subTask, prior, subseq : 다른 객체가 관리하도록 할 수 있지 않을까? 책임?
 	// dueDate, priority, importance는 어떨까?
 	
+	public Task() {
+		this.taskId = UUID.randomUUID();
+	}
+	
 	public UUID getTaskId() {
 		return taskId;
 	}
-	public void setTaskId(UUID taskId) {
-		this.taskId = taskId;
-	}
+//	public void setTaskId(UUID taskId) {
+//		this.taskId = taskId;
+//	}
 	public UUID getTaskGroupId() {
 		return taskGroupId;
 	}

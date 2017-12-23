@@ -29,4 +29,10 @@ public class TaskTest {
 		task.setDescription(description);
 		assertTrue(description.equals(task.getDescription()));
 	}
+	
+	@Test
+	public void test_diff_task_id() {
+		Task task2 = new Task();
+		assertFalse(task.getTaskId().equals(task2.getTaskId()));
+	}
 }
