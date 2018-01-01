@@ -29,6 +29,7 @@ git commit -m "README.md 파일 작성"
 git -c "http.proxy=168.219.61.252:8080" push origin dev
 
 git remote -v
+git remote add origin https://github.com/taeseob/headfirstdesignpatterns.git
 git remote set-url origin https://github.com/taeseob/taskmanager.git
 
 git config user.name "taeseob"
