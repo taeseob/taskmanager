@@ -7,7 +7,6 @@ class Task {
 	- String title
 	- String description
 	- Date dueDate
-	- Integer priority
 	- ImportanceType importance
 	- Set<UUID> priorGroupIds
 	- Set<UUID> subsequentGroupIds
