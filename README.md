@@ -33,6 +33,8 @@ git remote set-url origin https://github.com/taeseob/taskmanager.git
 
 git config user.name "taeseob"
 git config user.email "tsshin1985@gmail.com"
+git config --glabal http.proxy 168.219.61.252:8080
+git config --global alias.proxy '-c "http.proxy=168.219.61.252:8080"'
 
 git diff
 git log
