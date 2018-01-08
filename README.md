@@ -54,6 +54,14 @@ git -c "http.proxy=168.219.61.252:8080" remote show origin
 
 git config branch.dev.remote origin
 git config branch.dev.merge refs/heads/dev
+
+[브랜치 따서 작업 후 머지하기]
+git checkout -b pickwinnerbulk
+git checkout develop
+git pull origin develop
+git merge pickwinnerbulk
+git push origin develop
+git branch -d pickwinnerbulk
 ```
 
 ## SSH KEY 생성
