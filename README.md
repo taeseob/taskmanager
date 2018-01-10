@@ -19,14 +19,14 @@
 
 ## 사용 해 본 Git 명령어들
 ```
-git -c "http.proxy=168.219.61.252:8080" clone https://github.com/taeseob/taskmanager.git D:/WORK/MY_OWN_PROJECT/taskmanager
+git -c "http.proxy=xxx.xxx.xxx.xxx:xxxx" clone https://github.com/taeseob/taskmanager.git D:/WORK/MY_OWN_PROJECT/taskmanager
 git checkout -b dev
 
 git status
 git add README.md
 git add .
 git commit -m "README.md 파일 작성"
-git -c "http.proxy=168.219.61.252:8080" push origin dev
+git -c "http.proxy=xxx.xxx.xxx.xxx:xxxx" push origin dev
 
 git remote -v
 git remote add origin https://github.com/taeseob/headfirstdesignpatterns.git
@@ -34,8 +34,8 @@ git remote set-url origin https://github.com/taeseob/taskmanager.git
 
 git config user.name "taeseob"
 git config user.email "tsshin1985@gmail.com"
-git config --glabal http.proxy 168.219.61.252:8080
-git config --global alias.proxy '-c "http.proxy=168.219.61.252:8080"'
+git config --glabal http.proxy xxx.xxx.xxx.xxx:xxxx
+git config --global alias.proxy '-c "http.proxy=xxx.xxx.xxx.xxx:xxxx"'
 
 git diff
 git log
@@ -50,18 +50,21 @@ git checkout -- README.md (수정하기 전 Checkout 했던 내용으로 되돌�
 git fetch origin (가져오기 - 로컬로 가져오지만 머지하지 않음)
 git pull (가져오기 - 로컬로 가져오고 머지)
 
-git -c "http.proxy=168.219.61.252:8080" remote show origin
+git -c "http.proxy=xxx.xxx.xxx.xxx:xxxx" remote show origin
 
 git config branch.dev.remote origin
 git config branch.dev.merge refs/heads/dev
 
 [브랜치 따서 작업 후 머지하기]
-git checkout -b pickwinnerbulk
-git checkout develop
-git pull origin develop
-git merge pickwinnerbulk
-git push origin develop
-git branch -d pickwinnerbulk
+(develop)   git checkout -b newbranch
+(newbranch) git add .
+(newbranch) git commit -m "..."
+(newbranch) git checkout develop
+(develop)   git pull origin develop
+(develop)   git merge newbranch
+(develop)   git push origin develop
+(develop)   git branch -d newbranch
+
 ```
 
 ## SSH KEY 생성
